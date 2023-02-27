@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    
+    <title>Artist Search API</title>
+    
+    <!-- Meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Melita Poropat">
+    <meta name="description" content="Artist Search API - js web app za pretragu itunes izvođača za potrebe parcijalnog JS ispita">
+
+    <!-- style for home page-->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- script -->
+    <script defer src="./script.js"></script>
+
+    
+</head>
+
+<body>
+    <main id="landing">
+        <div class="results" id="results">
+          <div class="results__titles">
+            <div class="main-title">
+              <h1 id="artist-name"></h1>
+              <div class="placeHolder"></div>
+            </div>
+          </div>
+          <div class="results"></div>
+        </div>
+        <div class="search-container">
+          <div class="search-container-header">
+            <div class="main-title">
+              <h1>Artist Search API</h1>
+            </div>
+            <p class="lead">
+              Pretraži iTunes bazu glazbenika.
+            </p>
+          </div>
+          <form>
+            <div class="artist-name-input">
+              <label for="name" class="form-label"
+                ><span class="label-content">Ime izođača: </span></label
+              >
+              <input
+                id="search-input"
+                type="text"
+                name="name"
+                autocomplete="off"
+                placeholder="Upiši ime izvođača"
+                class="text-box"
+                required
+              />
+              <button id ="search-button">Pretraži</button>
+            </div>
+          </form>
+        </div>
+      </main>
+
+    </body>
+  </html>
